@@ -8,7 +8,7 @@ RUN         apt-get update && \
 ADD         bootstrap.sh /usr/bin/
 ADD         nginx_ssl.conf /root/
 ADD         nginx.conf /root/
-ADD         owncloud-7.0.4.tar.bz2 /var/www/
+ADD         owncloud-8.0.0.tar.bz2 /var/www/
 
 RUN         chown -R www-data:www-data /var/www &&\
             chmod +x /usr/bin/bootstrap.sh
