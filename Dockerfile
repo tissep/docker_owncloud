@@ -3,7 +3,7 @@ MAINTAINER	Chris Pettersson
 
 RUN         apt-get update && \
             apt-get install -y php5-cli php5-gd php5-pgsql php5-curl php5-intl php5-mcrypt \
-	    php5-ldap php5-gmp php5-apcu php5-imagick php5-fpm smbclient nginx
+	    php5-ldap php5-gmp php5-apcu php5-imagick php5-sqlite php5-fpm smbclient nginx             
 
 ADD         bootstrap.sh /usr/bin/
 ADD         nginx_ssl.conf /root/
