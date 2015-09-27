@@ -12,7 +12,7 @@ RUN         dpkg -i php5-apcu_4.0.6-1_amd64.deb
 ADD         bootstrap.sh /usr/bin/
 ADD         nginx_ssl.conf /root/
 ADD         nginx.conf /root/
-ADD         owncloud-8.0.3.tar.bz2 /var/www/
+ADD         owncloud-8.1.3.tar.bz2 /var/www/
 
 RUN         chown -R www-data:www-data /var/www &&\
             chmod +x /usr/bin/bootstrap.sh
